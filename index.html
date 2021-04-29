@@ -2,6 +2,7 @@
 <html>
 <head>
     
+        <script defer src="JavaScrip.js"></script>
         <meta charset="utf-8" />
         <link href="estilos.css" rel="stylesheet"/> 
         <title>Pensamiento Visual</title>
@@ -18,6 +19,10 @@
              
             </header>
         <h1 id="titulo1">Visual Thinking</h1>
+     <div> 
+                <button id="Boto">Tocame</button>
+                
+            </div>
     
             
         <h2 id="titulo2">INICIO</h2>
@@ -27,8 +32,28 @@
         <h2 id="titulo2">PROYECTOS</h2>
         <div>
             <h3 id="titulo3">PERRITOS</h3>
-            <img src="foto1.jpg" alt="Girl in a jacket" width="500" >
-            <img src="foto2.jpg" alt="Girl in a jacket" width="500" >
+            <div>
+                <img src="foto1.jpg" alt="Girl in a jacket" width="500" >
+                <button data-popup-target="#popup">Más</button>
+                <div class="popup" id="popup">
+                    <div class="popup-header"> 
+                        <div class="title">Labradog y otro</div>
+                        <button data-close-button class="close-button">&times;</button>
+
+                    </div>
+                    <div class="popup-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium dolor consequuntur delectus corrupti officia. Pariatur dolore iste nostrum magnam necessitatibus quas exercitationem laboriosam accusamus quia quis corrupti beatae ab vel, fugit sapiente possimus. Velit placeat, illo, sunt ipsam quisquam atque voluptates ipsa tempore repudiandae blanditiis nobis debitis delectus ipsum inventore?
+                
+                
+                       
+
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div><img src="foto2.jpg" alt="Girl in a jacket" width="500" ></div>
 
            
         </div>
@@ -52,6 +77,6 @@
     <p id="parrafo1">Este <a target="_blank" href="https://www.memegenerator.es/meme/3097604" title="Meme"> link </a>lleva a un meme</p>
     </div>
 
-
+    <div id="overlay"></div>
 </body>
 </html>
