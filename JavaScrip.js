@@ -2,6 +2,9 @@ const openPopupButtons = document.querySelectorAll('[data-popup-target]')
 const closePopupButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 const btnSend = document.getElementById('Boto')
+const color = document.getElementById('titulo1');
+const box = document.getElementById('cambiante')
+
 
 
 openPopupButtons.forEach(button => {
@@ -40,11 +43,27 @@ function openPopup(popup){
 
 
 btnSend.addEventListener('click', () =>{
-    btnSend.innerText = 'PERRITOS';
+    color.innerText = 'PERRITOS';
 
   
 })
 
 
 
+color.addEventListener("mouseenter", function( event ) {
 
+  event.target.style.color = "purple";
+
+  setTimeout(function() {
+    event.target.style.color = "";
+  }, 500);
+}, false);
+
+box.addEventListener("mouseenter", function( event ) {
+
+    event.target.style.color = "green";
+
+    setTimeout(function() {
+      event.target.style.color = "";
+    }, 500);
+  }, false);
